@@ -1,7 +1,7 @@
 name = "auth2"
 main = "src/server.ts"
 compatibility_date = "2024-12-09"
-node_compat = true
+compatibility_flags = [ "nodejs_compat" ]
 
 account_id = "0c8c22bdcd98c3dc6a35190650ef7906"
 

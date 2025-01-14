@@ -50,14 +50,15 @@
     ]
   },
   "dependencies": {
-    "@authhero/kysely-adapter": "0.27.0",
+    "@authhero/kysely-adapter": "0.28.1",
     "@hono/zod-openapi": "0.18.3",
     "@peculiar/x509": "^1.12.3",
     "@planetscale/database": "1.19.0",
     "arctic": "^2.3.3",
-    "authhero": "^0.36.0",
+    "authhero": "^0.38.0",
     "aws4fetch": "^1.0.20",
     "bcryptjs": "^2.4.3",
+    "csv-parser": "^3.1.0",
     "fast-xml-parser": "^4.5.1",
     "hono": "4.6.14",
     "hono-openapi-middlewares": "^1.0.11",
@@ -109,7 +110,7 @@
     "validator": "13.12.0",
     "vitest": "2.1.8",
     "vitest-fetch-mock": "0.4.2",
-    "wrangler": "3.99.0"
+    "wrangler": "3.101.0"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
