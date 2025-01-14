@@ -16,7 +16,7 @@ export async function getClient(env: Env, clientId: string): Promise<Client> {
     .map((connection) => {
       const envDefaultConnection =
         envDefaultSettings?.connections?.find(
-          (c) => c.name === connection.name
+          (c) => c.name === connection.name,
         ) || {};
 
       const mergedConnection = connectionSchema.parse(
@@ -25,8 +25,8 @@ export async function getClient(env: Env, clientId: string): Promise<Client> {
             ...flattenObject(envDefaultConnection),
             ...flattenObject(connection),
           },
-          ["options"]
-        )
+          ["options"],
+        ),
       );
 
       return mergedConnection;

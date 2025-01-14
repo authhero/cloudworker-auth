@@ -18,13 +18,13 @@ export function flattenObject(obj: any, prefix = "", res: any = {}) {
 
 export function unflattenObject(
   flatObj: { [key: string]: any },
-  prefixes: string[]
+  prefixes: string[],
 ): { [key: string]: any } {
   const result: { [key: string]: any } = {};
 
   for (const [key, value] of Object.entries(flatObj)) {
     const matchingPrefix = prefixes.find((prefix) =>
-      key.startsWith(`${prefix}_`)
+      key.startsWith(`${prefix}_`),
     );
 
     if (!matchingPrefix) {
